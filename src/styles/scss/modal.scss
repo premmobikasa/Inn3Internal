@@ -1,0 +1,144 @@
+ 
+.table-modal-wrapper {
+    .ant-modal-content {
+        padding: 0;
+
+        .ant-modal-title {
+            font-family: $regular;
+            font-style: normal;
+            font-weight: $semi_bold;
+            font-size: rem(16);
+            line-height: rem(24);
+            text-transform: $cap;
+            color: $heading_color;
+        }
+
+        label {
+         @include formLabel;
+        }
+
+        .ant-form-item-control-input-content input {
+            @include inputStore ; 
+        }
+
+        .ant-modal-header {
+            border-bottom: rem(1) solid $table_border;
+        }
+
+        
+        .form-bottom-footer {
+            border-top: rem(1) solid $table_border;
+            margin: 0px;
+            padding-bottom: 0!important;
+            button {
+                transition: $transition; 
+                padding: rem(4) rem(20);
+                span{
+                    font-size: em(16);
+                    text-transform: $cap;
+                    color: #000;
+                }
+                &:first-child{
+                    border-radius: rem(8);
+                    border: 1px solid  rgba(0, 0, 0, 0.15);
+                    background:  #FFF;
+                    box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.04); 
+                }
+                &:last-child{
+                    background: $button_blue;
+                    border-radius: rem(8);
+                    border: 1px solid $button_blue; 
+                    box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.04);
+                    span{
+                        color: #ffffff;
+                    }
+                }
+                &:hover{
+                    opacity: .78;
+                    transition: $transition;
+                }
+            }
+            &>div{
+               width: 100%;
+               justify-content: flex-end;
+            }
+        }
+      
+
+        .ant-modal-header,
+        .ant-modal-body,
+        .ant-modal-footer {
+            padding: rem(16);
+        }
+    }
+
+    .assign-content-wrapper {
+        .assign-item-checkbox {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: rem(16); margin-bottom: rem(16);
+            label{
+                align-items: center;
+            }
+        }
+        .header-search-wrapper{
+            margin-bottom: rem(20);
+            .ant-input-group-addon{
+                button{
+                    background: $button_blue;
+                    padding: 0 rem(16);
+                }
+            }
+            .ant-input-group-wrapper{
+                input{
+                    height: rem(32);
+                    &::placeholder{
+                        font-family: $regular;
+                        font-style: normal;
+                        font-weight: $normal;
+                        font-size: rem(14);
+                        line-height: rem(22);
+                        text-transform: $cap;
+                        color: $heading_color;
+                    }
+                }
+            }
+        }
+    }
+    // <<<-----hotels --add--modal--->>>
+     .forms-content-wrap{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+     }
+
+     .hotels-modal-checkbox{
+        width: 67%;
+        margin: 0.5rem auto 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 6rem;
+        label{
+            align-items: center;
+            gap: .5rem 0;
+        }
+     }
+     .upload-wrapper {
+        width: 67%;
+        margin: 0 auto;
+        margin: 1rem auto;
+    }
+    .hotel-amenity-modal{
+        .upload-wrapper {
+            width: 100%; 
+        }
+    }
+    .room-amenities {
+        .view-trip-wrap{
+            &>div{
+                justify-content: flex-end;
+            }
+        }
+    }
+    // <<<-----hotels --add--modal---end--here-->>>
+}
+ 

@@ -1,0 +1,76 @@
+@use "sass:math";
+
+// Strip Unit
+// Remove unit from value.
+
+@function strip-unit($value) {
+  @return math.div($value, ($value * 0 + 1));
+}
+
+// Convert to Rem
+// Does the main work of converting to a standardized unit by stripping a number
+// and multiplying by the rem value.
+
+@function convert-to-rem($value, $base-value) {
+  @if ($value !=auto) {
+    $value: math.div(strip-unit($value), strip-unit($base-value)) * 1rem;
+  }
+
+  @if ($value ==0rem) {
+    $value: 0;
+  }
+
+  // Turn 0rem into 0
+  @return $value;
+}
+
+// Rem Calc
+// Converts any standard CSS measurement to rem.
+// this will convert normal px to rem
+
+@function rem($values, $base-value: 16px) {
+  $max: length($values);
+
+  @if $max ==1 {
+    @return convert-to-rem(nth($values, 1), $base-value);
+  }
+
+  $rem-values: (
+  );
+
+@for $i from 1 through $max {
+  $rem-values: append($rem-values,
+    convert-to-rem(nth($values, $i), $base-value));
+} 
+@return $rem-values;
+
+}
+
+//conver to em for fonts
+
+@function convert-to-em($value, $base-value) {
+  @if ($value !=auto) {
+    $value: math.div(strip-unit($value), strip-unit($base-value)) * 1em;
+  } 
+  @if ($value ==0em) {
+    $value: 0;
+  } 
+  // Turn 0em into 0
+  @return $value;
+}
+
+@function em($values, $base-value: 16px) {
+  $max: length($values); 
+  @if $max ==1 {
+    @return convert-to-em(nth($values, 1), $base-value);
+  } 
+  $em-values: (
+  );
+
+@for $i from 1 through $max {
+  $em-values: append($em-values,
+    convert-to-em(nth($values, $i), $base-value));
+} 
+@return $em-values;
+
+}

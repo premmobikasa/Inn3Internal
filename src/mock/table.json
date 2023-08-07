@@ -1,0 +1,55 @@
+{
+   "hotelGroupTable":[
+        {
+          "key": "1",
+          "login": "username: sampleuser123", 
+          "hotelgroup": "Aqua Beach Resort"
+        },
+        {
+          "key": "2",
+          "login": "Joe Black", 
+          "hotelgroup": "Les Jardins du Faubourg Paris"
+        },
+        {
+          "key": "3",
+          "login": "Jim Green", 
+          "hotelgroup": "Sydney No. 1 Lake Park"
+        },
+        {
+          "key": "4",
+          "login": "Jim Red", 
+          "hotelgroup": "Les Jardins du Faubourg Paris"
+        },
+        {
+          "key": "5",
+          "login": "Jim Red", 
+          "hotelgroup": "Les Jardins du Faubourg Paris"
+        },
+        {
+          "key": "6",
+          "login": "Jim Red", 
+          "hotelgroup": "Les Jardins du Faubourg Paris"
+        }
+      ],
+
+      "hotelAmenities":[
+        {
+          "key": "1",
+          "hotelamenity": "100% Non-Smoking", 
+          "category": "Room Type",
+          "description":"100% Non-Smoking"
+        },
+        {
+          "key": "2",
+          "hotelamenity": "100% Pets Free", 
+          "category": "Room Type",
+          "description":"100% Pets Free"
+        },
+        {
+          "key": "3",
+          "hotelamenity": "120 DC", 
+          "category": "Miscellaneous",
+          "description":"---  "
+        }
+      ]
+}

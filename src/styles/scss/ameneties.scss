@@ -1,0 +1,73 @@
+.amenity-layout-wrapper {
+    @include Layout;
+    padding: 0;
+    background: transparent;
+    .ant-table-wrapper{
+        .ant-pagination{
+           .ant-pagination-total-text{
+               @include flex;
+               h4{
+                color:  rgba(0, 0, 0, 0.88);
+                font-size: em(14);
+                font-weight: 500;
+                font-family: $regular;
+                line-height: rem(22);
+              }
+           }
+        }
+      }
+    .ant-layout-sider-children {
+        height: calc(100vh - 150px);
+        .ant-menu-item-selected{
+            background: $active;
+            span{
+                color: $button_blue;
+            }
+        }
+        ul {
+            height: 100%;
+            border-right:0;
+            li {
+                span{
+                    font-size: em(14);
+                    text-transform: $cap;
+                    font-weight: normal;
+                    font-family: $regular;
+                    color: #000000;
+                }
+            }
+        }
+    }
+    .amenties-wrapper {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: rem(16);
+        @include breakpoint(upto-tablet){
+            grid-template-columns: 200px 70%;
+        }
+        .amenities-content-wrapper{
+            padding: rem(16);
+            background: #fff;
+        }
+    }
+    .amenity-wrapper{
+        .operation-btn{
+            button.edit-btn{
+                color: $button_blue!important;
+            }
+        } 
+    }
+    .headersection-wrap{
+        .add-btn{
+            width: rem(195); 
+            padding: rem(5) rem(8);
+            @include breakpoint(upto-tablet) {
+                width: rem(160);
+                padding: rem(2) rem(4); 
+                span {
+                    font-size: em(13);
+                }
+            }
+        }
+    }
+}

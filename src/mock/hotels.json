@@ -1,0 +1,261 @@
+{
+   "hotelsTopForm": [
+        {
+          "className": "",
+          "name": "hotel_name",
+          "label": "hotel name",
+          "message": "",
+          "type": "text",
+          "placeholder": "enter hotel name",
+          "prifixIcon": null,
+          "required": null,
+          "handleChange": null,
+          "SelectForm": null,
+          "Option": null
+        },
+        {
+          "className": "",
+          "name": "city",
+          "message": "",
+          "type": "select",
+          "placeholder": "",
+          "prifixIcon": null,
+          "required": null,
+          "Option": "Option",
+          "handleChange": "onCityChange",
+          "SelectForm": "SelectForm.city",
+          "label": "city",
+          "selectData": [{ "name": "delhi" }, { "name": "gurgaon" }, { "name": "goa" }]
+        },
+        {
+          "className": "",
+          "label": "email",
+          "name": "email",
+          "message": "",
+          "type": "email",
+          "placeholder": "enter email address",
+          "prifixIcon": null,
+          "required": null,
+          "handleChange": null,
+          "SelectForm": null,
+          "Option": null
+        },
+        {
+          "className": "",
+          "name": "state",
+          "message": "",
+          "type": "select",
+          "placeholder": "",
+          "prifixIcon": null,
+          "required": null,
+          "Option": "Option",
+          "handleChange": "onCityChange",
+          "SelectForm": "SelectForm.state",
+          "label": "state",
+          "selectData": [{ "name": "state1" }, { "name": "state2" }, { "name": "state3" }]
+        },
+        {
+          "className": "",
+          "name": "country",
+          "message": "",
+          "type": "select",
+          "placeholder": "",
+          "prifixIcon": null,
+          "required": null,
+          "Option": "Option",
+          "handleChange": "onCityChange",
+          "SelectForm": "SelectForm.country",
+          "label": "Country",
+          "selectData": [{ "name": "country1" }, { "name": "country2" }, { "name": "country3" }]
+        }
+      ],
+      "SelectForm":  {
+    "city": [{ "name": "delhi" }, { "name": "gurgaon" }, { "name": "goa" }],
+    "state": [{ "name": "state1" }, { "name": "state2" }, { "name": "state3" }],
+    "country": [{ "name": "country1" }, { "name": "country2" }, { "name": "country3" }]
+  },
+   "HotelsAddModal":  [
+      {
+        "className":"form-input",
+        "name":"username",
+        "message":"this field is required",
+        "type":"text",
+        "label":"Username",
+        "placeholder":"Enter email",
+        "prifixIcon": null,
+        "required": null,
+        "handleChange": null,
+        "SelectForm": null,
+        "Option": null
+      },
+      {
+        "className": "",
+        "name": "country",
+        "message": "",
+        "type": "select",
+        "placeholder": "",
+        "prifixIcon": null,
+        "required": null,
+        "Option": "Option",
+        "handleChange": "onCityChange",
+        "SelectForm": "SelectForm.country",
+        "label": "Country",
+        "selectData": [{ "name": "country1" }, { "name": "country2" }, { "name": "country3" }]
+      },
+      {
+        "className":"form-input",
+        "name":"password",
+        "message":"this field is required",
+        "type":"password",
+        "label":"Password",
+        "placeholder":"Enter password",
+        "prifixIcon": null,
+        "required": null,
+        "handleChange": null,
+        "SelectForm": null,
+        "Option": null
+      },
+      {
+        "className": "form-input",
+        "name": "state",
+        "message": "",
+        "type": "select",
+        "placeholder": "",
+        "prifixIcon": null,
+        "required": null,
+        "Option": "Option",
+        "handleChange": "onCityChange",
+        "SelectForm": "SelectForm.state",
+        "label": "state",
+        "selectData": [{ "name": "state1" }, { "name": "state2" }, { "name": "state3" }]
+      },
+      {
+        "className":"form-input",
+        "name":"confirm_password",
+        "message":"this field is required",
+        "type":"password",
+        "label":"Confirm Password",
+        "placeholder":"Enter confirm password",
+        "prifixIcon": null,
+        "required": null,
+        "handleChange": null,
+        "SelectForm": null,
+        "Option": null
+      },
+      {
+        "className": "form-input",
+        "name": "city",
+        "message": "",
+        "type": "select",
+        "placeholder": "",
+        "prifixIcon": null,
+        "required": null,
+        "Option": "Option",
+        "handleChange": "onCityChange",
+        "SelectForm": "SelectForm.city",
+        "label": "city",
+        "selectData": [{ "name": "delhi" }, { "name": "gurgaon" }, { "name": "goa" }]
+      },
+      {
+        "className":"form-input",
+        "name":"hotelname",
+        "message":"this field is required",
+        "type":"text",
+        "label":"hotel name",
+        "placeholder":"enter hotel name",
+        "prifixIcon": null,
+        "required": null,
+        "handleChange": null,
+        "SelectForm": null,
+        "Option": null
+      },
+      {
+        "className":"form-input",
+        "name":"latitude",
+        "message":"this field is required",
+        "type":"number",
+        "label":"latitude",
+        "placeholder":"enter latitude",
+        "prifixIcon": null,
+        "required": null,
+        "handleChange": null,
+        "SelectForm": null,
+        "Option": null
+      },
+      {
+        "className":"form-input",
+        "name":"address1",
+        "message":"this field is required",
+        "type":"textArea",
+        "label":"address1",
+        "placeholder":"enter address",
+        "prifixIcon": null,
+        "required": null,
+        "handleChange": null,
+        "SelectForm": null,
+        "Option": null
+      },
+      {
+        "className":"form-input",
+        "name":"latitude",
+        "message":"this field is required",
+        "type":"text",
+        "label":"latitude",
+        "placeholder":"enter latitude",
+        "prifixIcon": null,
+        "required": null,
+        "handleChange": null,
+        "SelectForm": null,
+        "Option": null
+      },
+      {
+        "className":"form-input",
+        "name":"address2",
+        "message":"this field is required",
+        "type":"textArea",
+        "label":"address2",
+        "placeholder":"enter address",
+        "prifixIcon": null,
+        "required": null,
+        "handleChange": null,
+        "SelectForm": null,
+        "Option": null
+      },
+      {
+        "className":"form-input",
+        "name":"zip",
+        "message":"this field is required",
+        "type":"number",
+        "label":"ZIP CODE",
+        "placeholder":"enter ZIP CODE",
+        "prifixIcon": null,
+        "required": null,
+        "handleChange": null,
+        "SelectForm": null,
+        "Option": null
+      }
+   ] ,
+   "HotelCheckData": [
+    {
+      "name": "Add Booking ID to subject"
+    },
+    {
+      "name": "Send Reservation email to Hotel owner"
+    },
+    {
+      "name": "Add to Google Hotel"
+    },
+    {
+      "name": "Enable Book Direct "
+    },
+    {
+      "name": "Send Hotel credentials"
+    }, 
+    {
+      "name": "Enable Trip"
+    } ,
+    {
+      "name": "Two-way integration"
+    } 
+  ] 
+}

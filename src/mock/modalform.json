@@ -1,0 +1,97 @@
+{
+  "hotel_group_form": [
+    {
+      "label": "hotel group name",
+      "name": "HotelGroup",
+      "required": true,
+      "type": "text",
+      "message": "this field is required",
+      "placeholder": "hotel group name",
+      "prifixIcon": null,
+      "handleChange": null,
+      "SelectForm": null,
+      "Option": null,
+      "value":""
+    },
+    {
+      "label": "Username",
+      "name": "username",
+      "required": false,
+      "type": "email",
+      "message": "Please input your Username!",
+      "placeholder": "Username",
+      "prifixIcon": null,
+      "handleChange": null,
+      "SelectForm": null,
+      "Option": null,
+      "value":""
+    },
+    {
+      "label": "password",
+      "name": "password",
+      "required": false,
+      "type": "password",
+      "message": "Please input your password!",
+      "placeholder": "password",
+      "prifixIcon": null,
+      "handleChange": null,
+      "SelectForm": null,
+      "Option": null,
+      "value":""
+    },
+    {
+      "label": "Confirm password",
+      "name": "confirmpassword",
+      "required": false,
+      "type": "password",
+      "message": "Please input your Confirm password!",
+      "placeholder": "confirm password",
+      "prifixIcon": null,
+      "handleChange": null,
+      "SelectForm": null,
+      "Option": null,
+      "value":""
+    }
+  ],
+  "AssignData": [
+    {
+      "name": "Quality Inn & Suites"
+    },
+    {
+      "name": "Days Hotel & Conference Hotel"
+    },
+    {
+      "name": "Baymont Inn & Suites"
+    },
+    {
+      "name": "Best Western"
+    },
+    {
+      "name": "Aiden By Best Western "
+    },
+    {
+      "name": "Hampton Inn"
+    },
+    {
+      "name": "Fox Ridge Resort"
+    },
+    {
+      "name": "Days Inn"
+    },
+    {
+      "name": "Courtyard By Marriott"
+    },
+    {
+      "name": "Best Western Plus"
+    },
+    {
+      "name": "Four Points"
+    },
+    {
+      "name": "Element Hotel"
+    },
+    {
+      "name": "Fairfield Inn"
+    }
+  ]
+}

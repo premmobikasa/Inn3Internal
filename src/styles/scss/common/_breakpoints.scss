@@ -1,0 +1,111 @@
+// Breakpoints for Media query.
+@mixin breakpoint($point) {
+  @if $point ==x-wide-screen {
+    @media only screen and (min-width: 1566px) {
+      @content;
+    }
+  }
+
+  @else if $point ==wide-screen {
+    @media only screen and (min-width: 1441px) {
+      @content;
+    }
+  }
+
+  @else if $point ==desktop {
+    @media only screen and (min-width: 1280px) {
+      @content;
+    }
+  }
+
+  @else if $point ==landscape-tablet {
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+
+  @else if $point ==tablet-992 {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  }
+
+  @else if $point ==tablet {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @else if $point ==mobile {
+    @media only screen and (min-width: 560px) {
+      @content;
+    }
+  }
+
+  @else if $point ==sm-mobile {
+    @media only screen and (min-width: 361px) {
+      @content;
+    }
+  }
+
+  @else if $point ==upto-mobile-375 {
+    @media only screen and (max-width: 375px) {
+      @content;
+    }
+  }
+
+  @else if $point ==upto-Iphone13-390 {
+    @media only screen and (max-width: 390px) {
+      @content;
+    }
+  }
+
+  @else if $point ==upto-mobile-mid-480 {
+    @media only screen and (max-width: 480px) {
+      @content;
+    }
+  }
+
+  @else if $point ==upto-mobile {
+    @media only screen and (max-width: 559px) {
+      @content;
+    }
+  }
+
+  @else if $point ==upto-tablet {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @else if $point ==upto-landscape-tablet {
+    @media only screen and (max-width: 1024px) {
+      @content;
+    }
+  }
+
+  @else if $point ==upto-desktop {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+// Device orientation.
+@mixin orientation($direction) {
+
+  $orientation-landscape: '(orientation:landscape)';
+  $orientation-portrait: '(orientation:portrait)';
+
+  @if $direction ==landscape {
+    @media #{$orientation-landscape} {
+      @content;
+    }
+  }
+
+  @if $direction ==portrait {
+    @media #{$orientation-portrait} {
+      @content;
+    }
+  }
+}

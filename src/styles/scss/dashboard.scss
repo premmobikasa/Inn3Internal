@@ -1,0 +1,114 @@
+// header
+
+.header-wrapper {
+    padding: rem(16);
+    margin: 0 auto;
+    width: 100%;
+    height: rem(72);
+    background: #fff;
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr max-content;
+        align-items: center;
+        gap: rem(15);
+         @include breakpoint(upto-tablet){
+              width: 100%!important; 
+              max-width: 100%!important; 
+         }
+        ul {
+            display: grid;
+            grid-template-columns: repeat(4, max-content);
+            align-items: center;
+            gap: 2rem;
+            font-family: $regular !important;
+            border-right: none!important;
+
+            &::before,
+            &::after {
+                display: none !important;
+            }
+
+            li {
+                list-style-type: none;
+                font-family: $regular;
+                padding: 0!important;
+                &:first-child{
+                    a {
+                        padding: 0!important;
+                        figure{
+                            display: flex;
+                            img{
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+                span {
+                    font-family: $regular;
+                } 
+                &:hover{
+                    background: transparent!important;
+                    opacity: .88;
+                    a {color: $button_blue; transition: $transition;} 
+                }
+                a {
+                    text-decoration: none;
+                    font-family: $regular;
+                    font-style: normal;
+                    font-weight: $normal;
+                    font-size: em(16);
+                    line-height: rem(22);
+                    color: $heading_color;
+                    text-transform: $cap;
+                    transition: $transition;
+                    padding-bottom: rem(8); 
+                    &:focus,
+                    :focus-within {
+                        color: $button_blue;
+                        transition: $transition;
+                    }
+
+                }
+              
+            } 
+            .active-menu a{
+                border-bottom: 2px solid $button_blue;
+                color: $button_blue;
+            }
+            .ant-menu-item-selected {
+                background: transparent!important; 
+                padding: 0!important;
+                border-radius: 0!important;
+                &::after,&::before ,a::before {
+                    display: none !important;
+                }
+            }
+        } 
+        .profile-wrapper{
+            cursor: pointer;
+        }
+    }
+}
+
+
+//  dashboard 
+
+.dashboard-layout-wrapper {
+   @include Layout;
+   .ant-table-wrapper{
+     .ant-pagination{
+        .ant-pagination-total-text{
+            @include flex;
+            h4{
+              color:  rgba(0, 0, 0, 0.88);
+              font-size: em(14);
+              font-weight: 500;
+              font-family: $regular;
+              line-height: rem(22);
+            }
+        }
+     }
+   }
+}
+

@@ -1,0 +1,147 @@
+
+.hotels-wrapper{
+    .hotels-form{
+        width: 75%;
+        margin: rem(16) auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0 rem(16);
+        .ant-form-item{
+            margin-bottom: rem(14);
+            .ant-form-item-label{
+                max-width: 100%;
+                padding: 0 0 rem(15);
+            }
+        }
+        .hotels-btn-wrap  {
+            .ant-form-item-control-input-content{
+                @include flex;
+                justify-content: flex-end;
+                grid-gap: rem(16);
+                button{
+                    font-family: $regular;
+                    font-style: normal;
+                    font-weight: $normal;
+                    font-size: em(16);
+                    line-height: rem(24);
+                    text-transform: $cap;
+                    transition: $transition;
+                    &:first-child{
+                        border: none;
+                        color: $danger_color; 
+                        background: transparent;
+                        &:focus,&:focus-within,&:focus-visible{
+                            box-shadow: none!important;
+                        }
+                        >div{
+                            display: none!important;
+                        }
+                    }
+                    &:last-child{
+                        background: $button_blue;
+                        color: #fff;
+                    }
+                    &:hover{
+                        opacity: .78;
+                        transition: $transition
+                    }
+                    
+                }
+            } 
+        }
+        .ant-form-item{
+            label {
+                    @include formLabel;
+                    @include breakpoint(upto-tablet) {
+                        width: 100%
+                    }
+                }
+            input{
+             @include inputStore;
+            }
+            
+        }
+    }
+
+    table{
+       .contact-details {
+         li {
+            display: grid;
+            grid-template-columns: 65px 1fr;
+            gap: .5rem;
+            @include breakpoint(upto-tablet) {
+              grid-template-columns: 75px 1fr;
+            }
+            td{
+                b{
+                    display: block;
+                    margin: rem(5) 0;
+                } 
+            }
+            strong {
+                font-family: $regular;
+                font-style: normal;
+                font-weight: $semi_bold;
+                font-size: rem(14);
+                line-height: rem(22); 
+                color: $table_tdcolor; 
+                padding-right: rem(5);
+                text-transform: $cap!important;
+                @include breakpoint(upto-tablet){
+                 font-size: rem(12);
+                }
+            }
+            span{
+                @include breakpoint(upto-tablet){
+                    font-size: rem(12);
+                   }
+            }
+            a{ 
+              text-transform: lowercase!important; 
+              text-decoration: none;
+              color: $button_blue;
+              transition: $transition;
+              &:hover{ 
+                transition: $transition;
+                opacity: .78;
+              }
+            } 
+         }
+         button{
+            padding: rem(1) rem(8); 
+            width: rem(72);
+            height: rem(22);
+            margin-top: rem(5);
+            font-family: $regular;
+            font-style: normal;
+            font-weight: $semi;
+            font-size: rem(12);
+            line-height: rem(20);
+            color: $heading_color;
+            @include flex;
+            border: rem(1) solid $border_color;
+         }
+       }
+       .hotels-operation-btn{
+        display: block!important;
+        button{
+            width: 100%;
+            text-align: left;
+            margin: 0 0 rem(16);
+            @include breakpoint(upto-tablet){
+             margin: 0 0 rem(8);
+            }
+        }
+        .deactive{
+            color: $danger_color!important;
+        }
+        .table-select{
+            width: 100%;
+            .ant-select-selector {
+                border: rem(1) solid $border_color;
+                color: $heading_color ;
+            } 
+        }
+       }
+    }
+}

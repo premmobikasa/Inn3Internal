@@ -1,0 +1,48 @@
+ 
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin inputStore {
+    height: rem(32);
+    font-size: rem(14); 
+    color:$heading_color; 
+    &::placeholder{
+        font-family: $regular;
+        font-style: normal;
+        font-weight: $normal;
+        font-size: rem(14);
+        line-height: rem(22);
+        text-transform: $cap;
+        color: $place_color;
+    }
+}
+
+@mixin formLabel{
+    font-family: $regular;
+    font-style: normal;
+    font-weight: $normal;
+    font-size: rem(14);
+    line-height: rem(22);
+    text-transform: $cap;
+    color: $heading_color;
+}
+
+//layout 
+
+@mixin Layout {
+    height: 100%;//calc(100vh - rem(140));
+    background: #fff;
+    width: rem(1300);
+    margin: 2rem auto;
+    padding: 1rem;
+    @include breakpoint(upto-desktop){
+        width: 100%;
+    }
+    .ant-layout-sider-children {
+        height: 100vh;
+    }
+}

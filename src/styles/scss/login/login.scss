@@ -1,0 +1,82 @@
+.login-wrapper {
+    height: calc(100vh - rem(5));
+    width: rem(600);
+    margin: 0 auto;
+    @include flex;
+
+    @include breakpoint(upto-mobile) {
+        width: 90%;
+    }
+
+    .logo {
+        figure {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto rem(24);
+
+            img {
+                max-width: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .form-content-wrapper {
+        width: 100%;
+        background: #ffffff;
+        padding: rem(35);
+        box-shadow: 0px rem(1) rem(2) rgba(0, 0, 0, 0.03), 0px rem(1) rem(6) -1px rgba(0, 0, 0, 0.02), 0px rem(2) rem(4) rgba(0, 0, 0, 0.02);
+        border-radius: rem(8);
+
+        form {
+            width: 100%;
+            height: max-content;
+
+            .form-btn {
+                margin-bottom: 0;
+            }
+
+            .checkbox-wrap {
+                .ant-form-item-control-input-content {
+                    @include flex;
+                    justify-content: $between;
+                }
+            }
+
+            .login-form-button {
+                width: 100%;
+                background: $button_blue;
+                height: rem(32);
+                transition: $transition;
+                color: #ffffff;
+                text-transform: $cap;
+                font-size: em(14);
+
+                &:hover {
+                    transition: $transition;
+                    opacity: .80;
+                }
+            }
+
+            .form-item {
+                input {
+                    font-family: $regular;
+                    font-size: em(14);
+                    border-color: $border_color;
+
+                    &::placeholder {
+                        font-size: em(14);
+                        text-transform: $cap;
+                        color: $place_color
+                    }
+                }
+
+                .ant-input-prefix {
+                    svg {
+                        fill: $input_icon;
+                    }
+                }
+            }
+        }
+    }
+}

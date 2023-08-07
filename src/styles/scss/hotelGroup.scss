@@ -1,0 +1,184 @@
+.hotel-group-wrapper {
+
+    .ant-table-content {
+        @include breakpoint(upto-tablet) {
+            overflow-x: scroll;
+               &::-webkit-scrollbar {
+                    height: 5px;
+                } 
+                &::-webkit-scrollbar-track {
+                    background: #f1f1f1;
+                } 
+                &::-webkit-scrollbar-thumb {
+                    background: #c1c1c1;
+                    border-radius: rem(4);
+                } 
+                &::-webkit-scrollbar-thumb:hover {
+                    background: #999;
+                    opacity: .89;
+                }
+            table {
+                width: rem(700);
+                .ant-table-tbody {
+                    tr {
+                        td {
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+
+        .ant-table-thead,
+        .ant-table-tbody {
+
+            td,
+            th {
+                border-right: 1px solid $table_border;
+                text-transform: $cap;
+
+                &:last-child {
+                    border-right: none;
+                }
+            }
+
+            th {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    table {
+        border: 1px solid $table_border;
+        margin-top: 1rem;
+        border-radius: 5px !important;
+
+        .ant-dropdown-trigger.ant-table-filter-trigger {
+            pointer-events: none; // will remove once working on functional
+        }
+
+        .ant-table-column-title {
+            text-transform: $cap;
+            color: black;
+        }
+        td.ant-table-cell {
+            vertical-align: middle;
+            font-family: $regular;
+            font-style: normal;
+            font-weight: $normal;
+            font-size: rem(14); 
+            line-height: rem(22);
+            color: $heading_color;
+            text-transform: $cap;
+            @include breakpoint(upto-tablet){ 
+                font-size: rem(13);            
+            }
+            .login-details {
+                li {
+                    b {
+                        font-family: $regular;
+                        font-style: normal;
+                        font-weight: $semi_bold;
+                        font-size: em(14); 
+                        line-height: rem(22);
+                        color: $table_tdcolor; 
+                    }
+                }
+            }
+        }
+
+        .operation-btn {
+            @include flex;
+            justify-content: $between;
+            width: 90%;
+            margin: 0 auto;
+
+            @include breakpoint(upto-tablet) {
+                width: 100%;
+                gap: 1rem;
+            }
+
+            button {
+                border: none;
+                outline: none;
+                background: transparent;
+                font-size: em(16);
+                text-transform: $cap;
+                color: $button_blue;
+                cursor: pointer;
+                transition: $transition;
+
+                &:last-child {
+                    color: $danger_color !important;
+                }
+
+                &:hover {
+                    transition: $transition;
+                    opacity: .80;
+                }
+            }
+        }
+    }
+}
+
+.headersection-wrap {
+    width: 100%;
+    @include flex;
+    justify-content: $between;
+
+    .title {
+        font-size: em(24);
+        font-family: $regular;
+        font-style: normal;
+        font-weight: $semi_bold;
+        color: $heading_color;
+        text-transform: $cap;
+
+        @include breakpoint(upto-tablet) {
+            font-size: em(18);
+        }
+    }
+
+    button {
+        background: $button_blue;
+        border: none;
+        width: rem(172);
+        padding: rem(5) rem(8);
+        @include breakpoint(upto-tablet) {
+            width: rem(145);
+            padding: rem(2) rem(4);
+            span {
+                font-size: em(13);
+            }
+        }
+        height: rem(32);
+        @include flex;
+        justify-content: space-around;
+        gap: .2rem;
+        border-radius: rem(5);
+        transition: $transition;
+        cursor: pointer;
+
+        &:hover {
+            transition: $transition;
+            opacity: .88;
+        }
+
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+        span {
+            @extend .title;
+            font-weight: normal;
+            color: #fff;
+            font-size: em(16);
+            @include breakpoint(upto-tablet) {
+                font-size: em(14);
+            }
+        }
+    }
+}

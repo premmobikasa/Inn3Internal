@@ -1,0 +1,19 @@
+{
+    "headerData": [
+        {
+            "label": "hotel group",
+            "key": "1",
+            "link": "/"
+        },
+        {
+            "label": "hotels",
+            "key": "2",
+            "link": "/hotels"
+        },
+        {
+            "label": "amenities",
+            "key": "3",
+            "link": "/amenities"
+        }
+    ]
+}

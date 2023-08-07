@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+@import "./common/_function.scss";
+@import "./reset.scss";
+@import "./common/_breakpoints.scss";
+@import "./common/minxin.scss";
+@import "./common/variable.scss";
+@import "./login/login.scss";
+@import "./dashboard.scss";
+@import "./hotelGroup.scss";
+@import "./modal.scss";
+@import "./hotels.scss";
+@import "./ameneties.scss";
+
+//tailwind 
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities'; 
